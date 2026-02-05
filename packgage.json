@@ -1,0 +1,14 @@
+{
+    "name": "ePathR4",
+    "version": "0.0.1",
+    "description": "ePath R4",
+    "author": "ePathProject",
+    "fhirVersions": [
+        "4.0.1"
+    ],
+    "dependencies": {
+        "hl7.fhir.r4.core": "4.0.1"
+    },
+    "url": "http://e-path.jp/fhir/core/ig",
+    "canonical": "http://e-path.jp/fhir/ePath"
+}

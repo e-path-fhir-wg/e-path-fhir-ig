@@ -1,0 +1,131 @@
+# 笊ｭ─────────────────────────────────ImplementationGuide-fish.json──────────────────────────────────笊ｮ
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see:                                                                    │
+# │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
+# 笊ｰ────────────────────────────────────────────────────────────────────────────────────────────────笊ｯ
+id: r4ig
+canonical: http://e-path.jp/fhir/ePath
+date: 2025-12-05
+version: 1.0.1
+name: EPath_R4_IG
+title: ePath R4 Implementation Guide
+status: active
+#releaseLabel: update # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+publisher: "Joint Committee of JAMI and JSCP"
+copyright: "Joint Committee of JAMI and JSCP（日本医療情報学会と日本クリニカルパス学会との合同委員会）. CC(Creative Commons) BY-ND 4.0"
+jurisdiction: 'urn:iso:std:iso:3166-2#JP'
+contact:
+  - name: ePath Project
+    telecom:
+      - system: url
+        value: http://e-path.jp
+description: ePath R4 実装ガイド
+license: CC0-1.0
+fhirVersion: 4.0.1
+dependencies:
+  jp-core.r4:
+    uri: http://jpfhir.jp/fhir/core/ImplementationGuide/jpfhir.jp.core
+    version: 1.1.2
+  jpfhir-terminology.r4:
+    uri: http://jpfhir.jp/fhir/jpfhir-terminology/ImplementationGuide/jpfhir-terminology
+    version: 1.5.0
+  #jpfhir-terminology.r4:
+  #  uri: http://jpfhir.jp/fhir/jpfhir-terminology/ImplementationGuide/jpfhir-terminology
+  #  version: 1.6.0
+parameters:
+  no-narrative: 
+    - CodeSystem/*
+  active-tables: 'false'
+  apply-version: 'true'
+  apply-copyright: 'true'
+  apply-publisher: 'true'
+  apply-contact: 'true'
+  apply-license: 'true'
+  apply-jurisdiction: 'true'
+  show-inherited-invariants: 'true'
+  usage-stats-opt-out: 'true'
+  display-warnings: 'true'
+  excludexml: 'true'
+  excludejson: 'false'
+  excludettl: 'true'
+  excludemap: 'true'
+  generate: #what does this do - todo: remove and see
+    - xml
+    - json
+  no-validate:
+    - '*/jpfhir.jp.core'
+  no-usage-check: 'true'
+  i18n-default-lang: 'ja'
+  special-url:
+    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_Organization
+    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_Patient
+    - http://loinc.org
+    - http://unitsofmeasure.org
+    - urn:ietf:bcp:13
+    - urn:ietf:bcp:47
+    - urn:iso:std:iso:3166
+    - urn:iso:std:iso:3166-2
+    - urn:iso:std:iso:3166-3
+    - urn:iso:std:iso:3166-N
+    - urn:oid:2.16.840.1.113883.6.3
+    - urn:oid:1.2.392.200250.3.2.200.10
+    - urn:oid:1.2.392.200250.3.2.200.20
+    - urn:oid:1.2.392.200250.3.2.200.30
+    - urn:oid:1.2.392.200250.2.2.50.70
+    - urn:oid:1.2.392.200250.2.2.50.150.1
+    - urn:oid:1.2.392.200250.2.2.50.150.2
+copyrightYear: 2024+
+releaseLabel: ci-build
+pages:
+  index.md:
+    title: ePath R4 実装ガイド
+  guide.md:
+    title: ガイダンス
+  guide-msandcard.md:
+    title: Must SupportとCardinality(多重度)のルール
+  guide-precautions.md:
+    title: 利用上の注意点
+  guide-difference.md:
+    title: ePathメッセージ構造（XML）定義との差異について
+  guide-missingval.md:
+    title: 欠損値の扱い
+  epathte.md:
+    title: ePathデータ構造 ひな型パス
+  epathte2.md:
+    title: ePathデータ構造 施設パス
+  epathst.md:
+    title: ePathデータ構造 適用後パスデータ
+  epathre.md:
+    title: 付録１．ePath FHIRリポジトリ
+  epathqu.md:
+    title: 付録２．患者用入力フォーム
+  epathtran.md:
+    title: 付録３．トランザクション
+  downloads.md:
+    title: Downloads
+  history.md:
+    title: 改訂履歴
+# 笊ｭ────────────────────────────────────────────menu.xml────────────────────────────────────────────笊ｮ
+# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
+# 笊ｰ────────────────────────────────────────────────────────────────────────────────────────────────笊ｯ
+menu:
+  IG Home: index.html
+  ガイダンス:
+    "総合ガイダンス": guide.html
+    "Must SupportとCardinality": guide-msandcard.html
+    "XML定義との差異": guide-difference.html
+    "欠損値の扱い": guide-missingval.html
+    "使用上の注意点": guide-precautions.html
+    "改訂履歴": history.html
+  ePath FHIR 仕様:
+    "ePathデータ構造 ひな型パス": epathte.html
+    "ePathデータ構造 施設パス": epathte2.html
+    "ePathデータ構造 適用後パスデータ": epathst.html
+    "付録１．ePath FHIRリポジトリ": epathre.html
+    "付録２．患者用入力フォーム": epathqu.html
+    "付録３．トランザクション": epathtran.html    
+  Table of Contents: toc.html
+  Artifacts Summary: artifacts.html
+  Other Resources:
+    "FHIR Spec ": new-tab {{site.data.fhir.path}}index.html
+  Downloads: downloads.html
