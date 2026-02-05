@@ -1,15 +1,15 @@
-# FHIR IG Publisher artifacts
-output/
-input-cache/
-temp/
-template/
 .DS_Store
+Thumbs.db
 
-# SUSHI (FSH) artifacts
-fsh-generated/
-node_modules/
+# SUSHI (FSH) / FHIR IG Publisher artifacts
+/fsh-generated
+/node_modules
+/output
+/input-cache
+/temp
+/template
+/translations
 
 # OS/IDE generated files
-.vscode/
-.idea/
-Thumbs.db
+/.vscode
+/.idea
