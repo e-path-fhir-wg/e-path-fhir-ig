@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+  <title>ePath R4 実装ガイド 公開バージョン履歴</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="http://hl7.org/fhir" />
+  <link href="fhir.css" rel="stylesheet" />
+  <link href="assets/css/bootstrap-fhir.css" rel="stylesheet" />
+  <link href="assets/css/project.css" rel="stylesheet" />
+  <link href="assets/css/pygments-manni.css" rel="stylesheet" />
+  <link href="assets/css/jquery-ui.css" rel="stylesheet" />
+  <link href="assets/css/prism.css" rel="stylesheet" />
+  <link href="assets/css/cqf.css" rel="stylesheet" />
+  <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png" />
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png" />
+  <link rel="shortcut icon" href="assets/ico/favicon.png" />
+</head>
+
+<body onload="document.body.style.opacity='1'">
+  <script src="assets/js/prism.js"></script>
+  <script type="text/javascript" src="assets/js/mermaid.js"></script>
+  <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+  <div id="segment-header" class="segment">
+    <!-- segment-header -->
+    <div class="container">
+      <!-- container -->
+      <!-- Placeholder for child template header declarations -->
+      <div id="ig-status">
+        <p>
+          <span style="font-size:12pt;font-weight:bold">ePath R4 Implementation Guide</span>
+          <br />
+          <span style="display:inline-block;">ePath R4 実装ガイド
+            <img alt="Japan flag" src="assets/images/lang-ja.png" title="Japan" /></span>
+        </p>
+      </div>
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /segment-header -->
+  <!-- segment-navbar -->
+  <div id="segment-navbar" class="segment">
+    <div id="stripe"></div>
+    <div class="container">
+      <!-- container -->
+      <!-- HEADER CONTENT -->
+      <nav class="navbar navbar-inverse"></nav>
+      <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /segment-navbar -->
+  <!--status-bar-->
+  <div id="segment-breadcrumb" class="segment">
+    <!-- segment-breadcrumb -->
+    <div class="container">
+      <!-- container -->
+      <ul class="breadcrumb">
+        <li>
+          <b>HL7 FHIR ePath R4 Implementation Guide (ePath R4 実装ガイド)</b>
+        </li>
+      </ul>
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /segment-breadcrumb -->
+  <a name="top"></a>
+  <div id="segment-content" class="segment">
+    <!-- segment-content -->
+    <div class="container">
+      <!-- container -->
+      <div class="row">
+        <div class="inner-wrapper">
+          <style type="text/css">
+            table {
+              border-collapse: collapse;
+              width: 100%;
+            }
+            th, td {
+              border: 1px solid black;
+              padding: 4px;
+            }
+            th {
+              text-align: center;
+            }
+          </style>
+
+          <div class="col-12">
+            <h2>公開バージョン履歴 Publication (Version) History</h2>
+            <h3>実装ガイドのバージョンリスト</h3>
+                <div style="width:95%; padding-left:40px;">
+                  <table border="1" style="border-collapse: collapse; text-align: center;">
+                    <thead>
+                      <tr bgcolor="lightgray">
+                        <th nowrap="nowrap">バージョン</th><th nowrap="nowrap">日付</th><th>実装ガイド</th><th>パッケージ</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr bgcolor="F2F2F2">
+                        <td colspan="4" style="padding-left:10px; text-align: left;"><b>現在のバージョン</b></td>
+                      </tr>
+                      <tr>
+                        <td>ver.1.0.1</td>
+                        <td>2025-12-05</td>
+                        <td><a href="251205/">閲覧</a>　　（<a href="251205/full-ig.zip">IGダウンロード</a>）</td>
+                        <td><a href="251205/package.tgz">package</a></td>
+                      </tr>
+                      <tr bgcolor="F2F2F2">
+                        <td colspan="4" style="padding-left:10px; text-align: left;"><b>過去バージョン</b></td>
+                      </tr>
+                      <tr>
+                        <td>ver.1.0.0<br /></td>
+                        <td>2025-09-25</td>
+                        <td><a href="250925/">閲覧</a>　　（<a href="250925/full-ig.zip">IGダウンロード</a>）</td>
+                        <td><a href="250925/package.tgz">package</a></td>
+                      </tr>
+                      <tr>
+                        <td>ver.1.0.0<br />(ドラフト)</td>
+                        <td>2025-06-23</td>
+                        <td><a href="250623/">閲覧</a>　　（<a href="250623/full-ig.zip">IGダウンロード</a>）</td>
+                        <td><a href="250623/package.tgz">package</a></td>
+                      </tr>
+                      <tr>
+                        <td>ver.0.0.4<br />(ドラフト)</td>
+                        <td>2025-03-21</td>
+                        <td><a href="250321/">閲覧</a>　　（<a href="250321/full-ig.zip">IGダウンロード</a>）</td>
+                        <td><a href="250321/package.tgz">package</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div><br />
+
+            <h3>改訂履歴</h3>
+            <ul>
+              <li><b>ver.1.0.1 (2025/12/05版)</b>
+                <div style="width:95%;">【修正内容】
+                  <br/>本バージョンの修正内容は、有識者によるコメントおよび指摘を受けての修正が大部分を占めている関係から、指摘事項に対する修正内容のような表記にしております。
+                  <table border="1" style="border-collapse: collapse;">
+                    <thead>
+                      <tr bgcolor="lightgray">
+                        <th>No.</th><th nowrap="nowrap">分　類</th><th>対応</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="text-align: center">1</td>
+                        <td>IGビルドのエラー・警告<br />(2025/11/01)</td>
+                        <td>定義リソースの修正および、ignoreWarnigへの記載を行いました。</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">2</td>
+                        <td>JP Coreパッケージバージョン<br />(2025/11/01)</td>
+                        <td>JP Coreパッケージは1.1.2、用語は1.5.0を採用します。各パッケージの最新バージョンを取得しました。</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">3</td>
+                        <td>IGビルドのエラー・警告に伴う定義リソースのid/url 対応<br />(2025/11/01)</td>
+                        <td>
+                          idとurlは同一の文字列を設定した。フォーマットは「スネークケースとアッパーキャメルケースの混在」から「アッパーキャメルケース」としました。それに伴い、sushi-config.yamlのspecial
+                          url を削除しました。</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">4</td>
+                        <td>MSの付与基準<br />(2025/11/01)</td>
+                        <td>MSの付与基準をIGに明記した。JP Coreのものを参考にしました。</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">5</td>
+                        <td>評価のリソース化<br />(2025/11/01)</td>
+                        <td>
+                          Observationリソースを採用し、EPathObservationEvaluationプロファイルを追加しました。SOAP、総合評価テキストはそれを示すためのコード体系を設け、Observation.valueStringやObservation.component.valueStringに設定することとしました。
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">6</td>
+                        <td>評価者・実施者のリソース化<br />(2025/11/01)</td>
+                        <td>
+                          氏名（@name）をPractitioner、職種（@job）をPractirionerRoleとしました。インラインでの参照を想定しています。</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">7</td>
+                        <td>URLにOIDが使われている<br />(2025/11/01)</td>
+                        <td>OIDの箇所をURLに変更しました。患者IDの識別子体系についてはOIDを残しました。</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">8</td>
+                        <td>独自の拡張の削減<br />(2025/11/01)</td>
+                        <td>評価、評価者・実施者のリソース化に伴い、意味が重複する拡張は削除しました。</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">9</td>
+                        <td>ValueSet バインディングの追加<br />(2025/11/01)</td>
+                        <td>BOM、Extensionに関して、ValueSet バインディングを追加しました。</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">10</td>
+                        <td>適応基準テキスト拡張の値<br />(2025/11/01)</td>
+                        <td>valueString のみとしました。</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">11</td>
+                        <td>診療科拡張<br />(2025/11/01)</td>
+                        <td>
+                          リソース化も検討しましたが拡張を用います。理由は主要なリソースがOrganizationを参照できないためです。JP-CLINSも拡張となっています。</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">12</td>
+                        <td>スペルミスの修正<br />(2025/11/01)</td>
+                        <td>JP Core, organization</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">13</td>
+                        <td>依存関係、利用している知的財産の表示<br />(2025/11/01)</td>
+                        <td>pagecontents の md （総合ガイダンス）に追加しました。</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">14</td>
+                        <td>一意識別子のルール<br />(2025/11/01)</td>
+                        <td>
+                          各リソースごとに識別子の設定仕様を明確にしました。識別子のNamingSystemを追加しました。また、定義リソースからパス識別子や病日、パスステップを除外しました。</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">15</td>
+                        <td>CarePlanリソースにおける ひな型、施設パスの識別子の廃止<br />(2025/11/01)</td>
+                        <td>
+                          CarePlan.instantiatesCanonicalから、ひな型ののPlanDefinitionの正規URLを参照するよう変更しました。</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">16</td>
+                        <td>説明文書<br />(2025/11/01)</td>
+                        <td>説明文書を追加しました。</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">17</td>
+                        <td>meta.profile<br />(2025/11/01)</td>
+                        <td>カーディナリティを1..* MS としました。</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">18</td>
+                        <td>tagのカーディナリティ<br />(2025/11/01)</td>
+                        <td>カーディナリティを0..としました。また、StatusTypeは不要なため廃止しました。</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">19</td>
+                        <td>activity.detail機能の無効化解除<br />(2025/11/01)</td>
+                        <td>activity.detail機能の無効化を解除しました。</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">20</td>
+                        <td>activity.outcomeReference機能の多重度限定、などCard.の緩和について<br />(2025/11/01)</td>
+                        <td>制限を緩和しました。</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">21</td>
+                        <td>PlanDefinition.action.definition<br />(2025/11/01)</td>
+                        <td>PlanDefinition（ひな型）.action.definition[x] から 病日イベントレベルのPlanDefinition
+                          や Questionnaire などを参照できるよう修正しました。</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">22</td>
+                        <td>項目追加<br />(2025/11/07)</td>
+                        <td>リソースプロファイルの「EPath PlanDefinition EP01」「EPath PlanDefinition
+                          EP02」に項目「action.timingTiming」の記述を追加しました。</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">23</td>
+                        <td>例示追加<br />(2025/11/07)</td>
+                        <td>「付録１．ePath FHIRリポジトリ」に「ePathリポジトリ機能定義（Capability
+                          Statement）の実装例」を追加しました。</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">24</td>
+                        <td>例示追加<br />(2025/11/07)</td>
+                        <td>「付録２．患者用入力フォーム」に「入力のタイミングの指示」を追加しました。</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">25</td>
+                        <td>項目記述修正<br />(2025/11/28)</td>
+                        <td>拡張項目の「リピート番号(EPath CarePlan RepeatNo)」、「パスステップ回数目(EPath CarePlan
+                          PathStep)」のvalue[x]が必須となるようカーディナリティ1..1に修正しました。</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">26</td>
+                        <td>項目記述修正<br />(2025/11/28)</td>
+                        <td>拡張項目の「予定外区分(EPath CarePlan
+                          UnplannedKind)」のvalue[x]のコード値のバリュセットにYN(EPath YNIDentification VS)をrequiredとして指定するよう修正しました。
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">27</td>
+                        <td>例図差し替え<br />(2025/11/28)</td>
+                        <td>ePathデータ構造におけるモデル図の画像を差し替えました。</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">28</td>
+                        <td>例示追加<br />(2025/11/28)</td>
+                        <td>「付録３．トランザクション」を追加ました。</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">29</td>
+                        <td>定義の修正<br />(2025/12/01)</td>
+                        <td>・EPath CarePlan Assessmentにパス状態区分がなかったため追加しました。<br/>
+                        ・EPathYNIDentificationVS→EPathYNIdentificationVS 記述修正しました。<br/>
+                        ・Bundle.entry中のencounterのカーディナリティ変更（0..1 → 0..*）しました。<br/>
+                        （他）<br/></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">30</td>
+                        <td>ライセンス記載の修正<br />(2025/12/01)</td>
+                        <td>ライセンス「Copuright/Legal」の記載において以下の通り修正しました。<br/>
+                        ・IGの仕様に係る記載： Joint Committee of JAMI and JSCP（日本医療情報学会と日本クリニカルパス学会との合同委員会<br/>
+                        ・BOMマスタに係る記載： 一般社団法人 日本クリニカルパス学会<br/>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">31</td>
+                        <td>定義の修正<br />(2025/12/05)</td>
+                        <td>・ローカルコードのスライスを明示的に追加しました<br/>
+                        ・LHS/外来パス用のアウトカムコード、アセスメントコードのコード体系をNamingSystemとして追加しました。<br/>
+                        ・OAT配下のアウトカムコード、アセスメントコードの項目に説明を追加しました。<br/>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div><br />
+              </li>
+              <br />
+              <li><b>ver.1.0.0 (2025/09/25版)</b>
+                <div style="width:95%;">【修正内容】
+                  <table border="1" style="border-collapse: collapse;">
+                    <thead>
+                      <tr bgcolor="lightgray">
+                        <th>No.</th><th nowrap="nowrap">分　類</th><th>対応</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="text-align: center">1</td>
+                        <td nowrap="nowrap">IGビルドのエラー・警告</td>
+                        <td>前バージョンver.1.0.0 (2025/06/23版)においてにおいてビルドエラー<a href="250623/QA.html">(QA.html)</a>が残っていたため、これらのエラーを解消するよう対応しました。(現バージョンの<a href="250925/QA.html">QA.html</a>)</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">2</td>
+                        <td>IGビルドのエラー・警告上の留意点</td>
+                        <td>id/urlの不整合のエラー対応は、URL記述で使用していた「_」を「-」に置き換える対応も考えましたが、JPCore/JPCLINSと同様の方法であるエラーとならないための設定special-urlを設けることとしました。</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">3</td>
+                        <td>IGビルドのエラー・警告上の留意点</td>
+                        <td>コードシステムのURL解決に関する警告（「ターミノロジー関連でBOMなどのリソース化（コード定義の明示化）が必要」等）が発生しているが、マスタに関してはBOMのコード・名称内容を記載するは難しい（有償マスタである点やメンテンナンス負荷等の配慮が必要）ことから警告が含まったままとしている。</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">4</td>
+                        <td>IGビルドのエラー・警告上の留意点</td>
+                        <td>サンプルデータにコードシステムのURL解決に関する警告が発生しているが、ローカル環境でのビルドという点とサンプルデータ内のreferenceのリンク先は必ずしも実在し得ない考えより、当警告は編集コメントを加えた形で警告が存在したままとしています。</td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">5</td>
+                        <td>IGビルドのエラー・警告上の留意点</td>
+                        <td>タスク分類のValueSet（EPath_TaskCategory_VS）は「ePathのデータ要素と構造に関する仕様書Ver1.2.0」と併せている関係から警告が残ったままとなっております（ValueSetにローカルコードなど、仕様書に記載されていないコードが含まれていたため）。</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div><br />
+              </li>
+              <br />
+              <li><b>ver.1.0.0 (2025/06/23版)</b>
+                <div style="width:95%;">初版公開
+                </div><br />
+              </li>
+              <br />
+              <li><b>ver.0.0.4ドラフト (2025/03/21版)</b>
+                <div style="width:95%;">ePath FHIR IG策定のWGメンバー内にて暫定ドラフトを限定公開
+                </div><br />
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+        <!-- /inner-wrapper -->
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /segment-content -->
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>
+  <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"></a>
+  <div id="segment-footer" igtool="footer" class="segment">
+    <!-- segment-footer -->
+    <div class="container">
+      <!-- container -->
+      <div class="inner-wrapper">
+        <p>
+          IG © 2024+ Joint Committee of JAMI and JSCP（日本医療情報学会と日本クリニカルパス学会との合同委員会）.
+          <br />
+        </p>
+      </div>
+      <!-- /inner-wrapper -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /segment-footer -->
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+</body>
+
+</html>
