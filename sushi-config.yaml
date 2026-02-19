@@ -5,7 +5,7 @@
 # 笊ｰ────────────────────────────────────────────────────────────────────────────────────────────────笊ｯ
 id: r4ig
 canonical: http://e-path.jp/fhir/ePath
-date: 2025-12-05
+date: 2026-02-19
 version: 1.0.1
 name: EPath_R4_IG
 title: ePath R4 Implementation Guide
@@ -30,11 +30,11 @@ dependencies:
     uri: http://jpfhir.jp/fhir/jpfhir-terminology/ImplementationGuide/jpfhir-terminology
     version: 1.5.0
   #jpfhir-terminology.r4:
-  #  uri: http://jpfhir.jp/fhir/jpfhir-terminology/ImplementationGuide/jpfhir-terminology
+  #  uri: http://jpfhir.jp/fhir/jpfhir-terminology/ImplementationGuide/
   #  version: 1.6.0
 parameters:
-  no-narrative: 
-    - CodeSystem/*
+  #no-narrative: 
+  #  - CodeSystem/*
   active-tables: 'false'
   apply-version: 'true'
   apply-copyright: 'true'
@@ -103,7 +103,7 @@ pages:
     title: 付録３．トランザクション
   downloads.md:
     title: Downloads
-  history.md:
+  update-history.md:
     title: 改訂履歴
 # 笊ｭ────────────────────────────────────────────menu.xml────────────────────────────────────────────笊ｮ
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
@@ -116,7 +116,7 @@ menu:
     "XML定義との差異": guide-difference.html
     "欠損値の扱い": guide-missingval.html
     "使用上の注意点": guide-precautions.html
-    "改訂履歴": history.html
+    "改訂履歴": update-history.html
   ePath FHIR 仕様:
     "ePathデータ構造 ひな型パス": epathte.html
     "ePathデータ構造 施設パス": epathte2.html

@@ -1,6 +1,6 @@
 ### はじめに
 
-この実装ガイドは、ePathメッセージ構造をHL7FHIR R4に表現するための最小限の適合性要件を定めたものである。
+この実装ガイドは、ePathメッセージ構造をHL7FHIR R4で表現するための最小限の適合性要件を定めたものである。
 
 ePathメッセージ構造の仕様は、[ePathのデータ要素と構造に関する仕様書（Ver.1.2.0）](https://www.jami.jp/jamistd/standards/)を参照のこと。
 
@@ -30,7 +30,7 @@ ePathメッセージ構造の仕様は、[ePathのデータ要素と構造に関
     - [XML定義との差異](guide-difference.html)
     - [欠損値の扱い](guide-missingval.html)
     - [使用上の注意点](guide-precautions.html)
-    - [改訂履歴](history.html)
+    - [改訂履歴](update-history.html)
 - ePath FHIR 仕様
     - [ePathデータ構造 ひな型パス](epathte.html)
     - [ePathデータ構造 施設パス](epathte2.html)

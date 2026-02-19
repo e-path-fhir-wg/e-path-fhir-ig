@@ -29,21 +29,21 @@ FHIR準拠したePathリポジトリ クライアントで、リソースに対�
 
 ### 医療機関情報（Organization）
 
-ePathリポジトリには、施設パスや適用後パスデータの発生源である医療機関情報（[EPathOrganization](StructureDefinition-EPathOrganization.html)）を登録する。(SHALL)
+ePathリポジトリには、施設パスや適用後パスデータの発生源である医療機関情報（[EPathOrganization](StructureDefinition-EPathOrganization.html)）を登録しなければならない。(SHALL)
 
 これらは施設パスや適用後パスデータを登録するタイミング、またはその前に登録すること。
 
 ### 患者基本情報（Patient）
 
-ePathリポジトリには、パスが適用される患者基本情報（[EPathPatient](StructureDefinition-EPathPatient.html)）を登録する。(SHALL)
+ePathリポジトリには、パスが適用される患者基本情報（[EPathPatient](StructureDefinition-EPathPatient.html)）を登録しなければならない。(SHALL)
 
 これらは適用後パスデータを登録するタイミング、またはその前に登録すること。
 
 ### 適用後パスデータバンドル（Bundle）
 
-ePathメッセージ構造の定義上、すべての病日・イベントを [適用後パスデータバンドル（Bundle）](StructureDefinition-EPathBundleMessageEP12.html)のエントリ（Bundle.entry）に追加した場合、のエントリの件数が大きくなることが予想される。そのため、FHIR版のePathリポジトリには、<span style="color: red;">病日・イベント単位でエントリを分割</span> した [適用後パスデータバンドル（Bundle）](StructureDefinition-EPathBundleMessageEP12.html)格納する。(SHOULD)
+ePathメッセージ構造の定義上、すべての病日・イベントを [適用後パスデータバンドル（Bundle）](StructureDefinition-EPathBundleMessageEP12.html)のエントリ（Bundle.entry）に追加した場合、のエントリの件数が大きくなることが予想される。そのため、FHIR版のePathリポジトリには、<span style="color: red;">病日・イベント単位でエントリを分割</span> した [適用後パスデータバンドル（Bundle）](StructureDefinition-EPathBundleMessageEP12.html)格納すべきである。(SHOULD)
 
-また、病日・イベント単位で分割した適用後パスデータバンドルを一括で抽出するため、適用後パスで作成した [適用後パスデータリスト（List）](StructureDefinition-EPathListEPathRepository.html) のList.itemに病日・イベント単位で分割した適用後パスデータバンドルの参照を設定する。(SHALL)
+また、病日・イベント単位で分割した適用後パスデータバンドルを一括で抽出するため、適用後パスで作成した [適用後パスデータリスト（List）](StructureDefinition-EPathListEPathRepository.html) のList.itemに病日・イベント単位で分割した適用後パスデータバンドルの参照を設定しなければならない。(SHALL)
 
 List採用をしたのは、病日・イベント単位での動的な更新を実現するためである。
 
@@ -98,7 +98,8 @@ http://e-path.jp/fhir/ePath/IdSystem/event-id と同じ値を設定する。
 
 #### 適用後パスデータリスト（List）
 
-ePathリポジトリ上に分割して格納された適用後パスデータは、[適用後パスデータリスト（List）](StructureDefinition-EPathListEPathRepository.html) を用いてグルーピングする。(SHOULD)<br/>
+ePathリポジトリ上に分割して格納された適用後パスデータは、[適用後パスデータリスト（List）](StructureDefinition-EPathListEPathRepository.html) を用いてグルーピングするべきである。(SHOULD)<br/>
+
 List.entry.item に適用後パスデータへの参照を設定する。<br/>
 
 **適用後パスデータへの参照**
