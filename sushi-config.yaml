@@ -30,7 +30,7 @@ dependencies:
     uri: http://jpfhir.jp/fhir/jpfhir-terminology/ImplementationGuide/jpfhir-terminology
     version: 1.5.0
   #jpfhir-terminology.r4:
-  #  uri: http://jpfhir.jp/fhir/jpfhir-terminology/ImplementationGuide/jpfhir-terminology
+  #  uri: http://jpfhir.jp/fhir/jpfhir-terminology/ImplementationGuide/
   #  version: 1.6.0
 parameters:
   #no-narrative: 
@@ -83,12 +83,12 @@ pages:
     title: ガイダンス
   guide-msandcard.md:
     title: Must SupportとCardinality(多重度)のルール
-  guide-precautions.md:
-    title: 利用上の注意点
   guide-difference.md:
-    title: ePathメッセージ構造（XML）定義との差異について
+    title: XML定義との差異
   guide-missingval.md:
     title: 欠損値の扱い
+  guide-precautions.md:
+    title: 使用上の注意点
   epathte.md:
     title: ePathデータ構造 ひな型パス
   epathte2.md:

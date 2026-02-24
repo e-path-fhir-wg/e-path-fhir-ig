@@ -86,7 +86,7 @@ EPathPlanDefinitionEvent の識別子で、施設パス識別、病日[-パス�
 
 	"url": "http://e-path.jp/fhir/ePath/PlanDefinition/EVT.2211234567.CN05I00511-L.1"
 	
-	CN05I00511-L の 病日1を表す。
+	EVT.2211234567.CN05I00511-L の 病日1を表す。
 
 PlanDefinition.id を設定する場合、正規URLの末尾要素と同じ値を設定すること。
 
